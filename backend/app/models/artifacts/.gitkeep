@@ -1,0 +1,2 @@
+# Artifacts directory placeholder
+# Model binary artifacts (.joblib, .onnx, .pkl) are generated locally and excluded from git

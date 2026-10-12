@@ -1,0 +1,157 @@
+{
+  "forecasting": {
+    "normal_marketplace": {
+      "forecaster": {
+        "mae": 3.51,
+        "rmse": 4.29
+      },
+      "global_mean": {
+        "mae": 6.85,
+        "rmse": 7.91
+      },
+      "naive_lag1": {
+        "mae": 1.54,
+        "rmse": 1.98
+      }
+    },
+    "demand_led_surge": {
+      "forecaster": {
+        "mae": 24.47,
+        "rmse": 38.19
+      },
+      "global_mean": {
+        "mae": 22.46,
+        "rmse": 38.6
+      },
+      "naive_lag1": {
+        "mae": 2.46,
+        "rmse": 3.24
+      }
+    },
+    "natural_shortage": {
+      "forecaster": {
+        "mae": 12.57,
+        "rmse": 16.92
+      },
+      "global_mean": {
+        "mae": 10.04,
+        "rmse": 15.3
+      },
+      "naive_lag1": {
+        "mae": 1.68,
+        "rmse": 2.13
+      }
+    },
+    "unusual_supply_drop": {
+      "forecaster": {
+        "mae": 6.33,
+        "rmse": 7.03
+      },
+      "global_mean": {
+        "mae": 2.5,
+        "rmse": 3.13
+      },
+      "naive_lag1": {
+        "mae": 1.61,
+        "rmse": 2.03
+      }
+    }
+  },
+  "detector_audit": {
+    "val_threshold_results": [
+      {
+        "threshold": 10.0,
+        "precision": 0.3333,
+        "recall": 0.2167,
+        "fpr": 0.1444,
+        "f1": 0.2626,
+        "ns_fpr": 0.25
+      },
+      {
+        "threshold": 15.0,
+        "precision": 0.3289,
+        "recall": 0.2083,
+        "fpr": 0.1417,
+        "f1": 0.2551,
+        "ns_fpr": 0.25
+      },
+      {
+        "threshold": 20.0,
+        "precision": 0.3478,
+        "recall": 0.2,
+        "fpr": 0.125,
+        "f1": 0.254,
+        "ns_fpr": 0.2333
+      },
+      {
+        "threshold": 25.0,
+        "precision": 0.3684,
+        "recall": 0.175,
+        "fpr": 0.1,
+        "f1": 0.2373,
+        "ns_fpr": 0.2
+      },
+      {
+        "threshold": 30.0,
+        "precision": 0.4857,
+        "recall": 0.1417,
+        "fpr": 0.05,
+        "f1": 0.2194,
+        "ns_fpr": 0.15
+      },
+      {
+        "threshold": 35.0,
+        "precision": 0.6471,
+        "recall": 0.0917,
+        "fpr": 0.0167,
+        "f1": 0.1606,
+        "ns_fpr": 0.05
+      },
+      {
+        "threshold": 40.0,
+        "precision": 0.75,
+        "recall": 0.025,
+        "fpr": 0.0028,
+        "f1": 0.0484,
+        "ns_fpr": 0.0083
+      },
+      {
+        "threshold": 50.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "fpr": 0.0,
+        "f1": 0.0,
+        "ns_fpr": 0.0
+      }
+    ],
+    "selected_threshold": 10.0,
+    "test_results": {
+      "rule_based_selected": {
+        "threshold": 10.0,
+        "precision": 0.3205,
+        "recall": 0.2083,
+        "fpr": 0.1472,
+        "pr_auc": 0.3335,
+        "roc_auc": 0.5386,
+        "natural_shortage_fpr": 0.2667
+      },
+      "rule_based_thr40": {
+        "threshold": 40.0,
+        "precision": 0.75,
+        "recall": 0.05,
+        "fpr": 0.0056,
+        "pr_auc": 0.3335,
+        "roc_auc": 0.5386,
+        "natural_shortage_fpr": 0.0167
+      },
+      "isolation_forest": {
+        "precision": 0.3315,
+        "recall": 0.5083,
+        "fpr": 0.3417,
+        "pr_auc": 0.3256,
+        "roc_auc": 0.5971,
+        "natural_shortage_fpr": 0.4917
+      }
+    }
+  }
+}

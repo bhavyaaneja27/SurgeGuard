@@ -1,0 +1,113 @@
+{
+  "rule_based_detector": {
+    "precision": 0.6667,
+    "recall": 0.0667,
+    "false_positive_rate": 0.0111,
+    "pr_auc": 0.3432,
+    "roc_auc": 0.5474,
+    "detection_delay_minutes": 54.0,
+    "class_balance": {
+      "demand_spike": 120,
+      "natural_shortage": 120,
+      "normal": 120,
+      "unusual_supply_drop": 120
+    },
+    "threshold": 40.0
+  },
+  "threshold_sensitivity": [
+    {
+      "threshold": 10.0,
+      "precision": 0.3375,
+      "recall": 0.225,
+      "fpr": 0.1472,
+      "tp": 27,
+      "fp": 53,
+      "tn": 307,
+      "fn": 93
+    },
+    {
+      "threshold": 20.0,
+      "precision": 0.3235,
+      "recall": 0.1833,
+      "fpr": 0.1278,
+      "tp": 22,
+      "fp": 46,
+      "tn": 314,
+      "fn": 98
+    },
+    {
+      "threshold": 30.0,
+      "precision": 0.4571,
+      "recall": 0.1333,
+      "fpr": 0.0528,
+      "tp": 16,
+      "fp": 19,
+      "tn": 341,
+      "fn": 104
+    },
+    {
+      "threshold": 40.0,
+      "precision": 0.6667,
+      "recall": 0.0667,
+      "fpr": 0.0111,
+      "tp": 8,
+      "fp": 4,
+      "tn": 356,
+      "fn": 112
+    },
+    {
+      "threshold": 50.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "fpr": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 360,
+      "fn": 120
+    },
+    {
+      "threshold": 60.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "fpr": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 360,
+      "fn": 120
+    },
+    {
+      "threshold": 70.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "fpr": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 360,
+      "fn": 120
+    },
+    {
+      "threshold": 80.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "fpr": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 360,
+      "fn": 120
+    }
+  ],
+  "caveats": [
+    "Metrics computed on controlled synthetic scenarios with injected patterns.",
+    "Labels do not reflect or prove real-world collusion incidents.",
+    "Natural shortage FPR: 0.033 (fraction of natural shortage steps flagged as anomalous).",
+    "PR-AUC uses trapezoidal integration over threshold sweep."
+  ],
+  "isolation_forest": {
+    "precision": 0.2849,
+    "recall": 0.4083,
+    "false_positive_rate": 0.3417,
+    "pr_auc": 0.3034,
+    "roc_auc": 0.5598,
+    "detection_delay_minutes": 13.0
+  }
+}

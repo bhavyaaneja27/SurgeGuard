@@ -1,0 +1,17 @@
+{
+  "model_type": "feature_pipeline",
+  "version": "v2.0-phase2",
+  "window_size_steps": 6,
+  "sdr_shortage_threshold": 0.85,
+  "features": [
+    "supply_drop_pct",
+    "supply_drop_velocity",
+    "demand_change_pct",
+    "supply_demand_ratio",
+    "baseline_supply_deviation",
+    "shortage_duration",
+    "wait_time_delta",
+    "fare_pressure_delta",
+    "unfulfilled_pct"
+  ]
+}

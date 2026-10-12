@@ -1,0 +1,118 @@
+{
+  "full_trace": [
+    {
+      "name": "Phase 2 Rule-Based (thr=40)",
+      "tp": 6,
+      "fp": 2,
+      "tn": 358,
+      "fn": 114,
+      "precision": 0.75,
+      "recall": 0.05,
+      "f1": 0.0938,
+      "fpr": 0.0056,
+      "natural_shortage_fpr": 0.0167,
+      "roc_auc": 0.5458,
+      "pr_auc": 0.3156
+    },
+    {
+      "name": "Phase 2 Isolation Forest",
+      "tp": 61,
+      "fp": 123,
+      "tn": 237,
+      "fn": 59,
+      "precision": 0.3315,
+      "recall": 0.5083,
+      "f1": 0.4013,
+      "fpr": 0.3417,
+      "natural_shortage_fpr": 0.4917,
+      "roc_auc": 0.5974,
+      "pr_auc": 0.3306
+    },
+    {
+      "name": "Phase 3 Contextual (@ Watch thr=30)",
+      "tp": 29,
+      "fp": 21,
+      "tn": 339,
+      "fn": 91,
+      "precision": 0.58,
+      "recall": 0.2417,
+      "f1": 0.3412,
+      "fpr": 0.0583,
+      "natural_shortage_fpr": 0.175,
+      "roc_auc": 0.6075,
+      "pr_auc": 0.4707
+    },
+    {
+      "name": "Phase 3 Contextual (@ Investigate thr=60)",
+      "tp": 21,
+      "fp": 0,
+      "tn": 360,
+      "fn": 99,
+      "precision": 1.0,
+      "recall": 0.175,
+      "f1": 0.2979,
+      "fpr": 0.0,
+      "natural_shortage_fpr": 0.0,
+      "roc_auc": 0.6075,
+      "pr_auc": 0.4707
+    }
+  ],
+  "active_interval": [
+    {
+      "name": "Phase 2 Rule-Based (thr=40)",
+      "tp": 6,
+      "fp": 2,
+      "tn": 181,
+      "fn": 55,
+      "precision": 0.75,
+      "recall": 0.0984,
+      "f1": 0.1739,
+      "fpr": 0.0109,
+      "natural_shortage_fpr": 0.0328,
+      "roc_auc": 0.5967,
+      "pr_auc": 0.3784
+    },
+    {
+      "name": "Phase 2 Isolation Forest",
+      "tp": 58,
+      "fp": 114,
+      "tn": 69,
+      "fn": 3,
+      "precision": 0.3372,
+      "recall": 0.9508,
+      "f1": 0.4979,
+      "fpr": 0.623,
+      "natural_shortage_fpr": 0.9508,
+      "roc_auc": 0.7237,
+      "pr_auc": 0.3794
+    },
+    {
+      "name": "Phase 3 Contextual (@ Watch thr=30)",
+      "tp": 29,
+      "fp": 21,
+      "tn": 162,
+      "fn": 32,
+      "precision": 0.58,
+      "recall": 0.4754,
+      "f1": 0.5225,
+      "fpr": 0.1148,
+      "natural_shortage_fpr": 0.3443,
+      "roc_auc": 0.7682,
+      "pr_auc": 0.6559
+    },
+    {
+      "name": "Phase 3 Contextual (@ Investigate thr=60)",
+      "tp": 21,
+      "fp": 0,
+      "tn": 183,
+      "fn": 40,
+      "precision": 1.0,
+      "recall": 0.3443,
+      "f1": 0.5122,
+      "fpr": 0.0,
+      "natural_shortage_fpr": 0.0,
+      "roc_auc": 0.7682,
+      "pr_auc": 0.6559
+    }
+  ]
+}
